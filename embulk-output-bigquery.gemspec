@@ -15,13 +15,13 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # the latest version
-  spec.add_dependency 'google-apis-storage_v1','= 0.33.0'
-  spec.add_dependency 'google-apis-bigquery_v2','= 0.61.0'
   spec.add_dependency 'time_with_zone'
   spec.add_dependency 'thwait'
   # activesupport require Ruby >= 2.7.0
   # jruby-9.3.0.0 is MRI 2.6 compatible
   spec.add_dependency 'activesupport', "< 7.0"
+  spec.add_dependency 'google-apis-storage_v1','< 0.34.0'
+  spec.add_dependency 'google-apis-bigquery_v2','< 0.65.0'
 
   spec.add_development_dependency 'bundler', ['>= 1.10.6']
   spec.add_development_dependency 'rake', ['>= 10.0']
